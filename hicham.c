@@ -82,4 +82,12 @@ int print_hexadecimal(va_list types, char buffer[], int flags, int width, int pr
 	return (print_hexa(types, "0123456789abcdef", buffer, flags, 'x', width, precision, size));
 }
 /**
- *
+ * print_hexa_upper - it prints an unsigned num in upperhexadecimal
+ * @types: list of args
+ * @buffer: buffer of arr
+ * @flags: calculates the flags
+ * @width: width
+ * @precision: precision
+ * @size: size
+ * Return: num of characters
+ */
