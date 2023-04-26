@@ -70,3 +70,25 @@ int print_string(va_list types, char buffer[], int flags, int width, int precisi
 
 	return (write(1, string, len));
 }
+/**
+ * print_percent - prints a percent sign
+ * @types: list of args
+ * @buffer: an array
+ * @flags: calculates the flags
+ * @width: width
+ * @size: the size
+ * @precision: precison
+ * Return: num of args
+ */
+
+int print_percent(va_list types, char buffer[], int flags, int width, int precision, int size)
+{
+	UNUSED(types);
+	UNUSED(buffer);
+	UNUSED(flags);
+	UNUSED(width);
+	UNUSED(precision);
+	UNUSED(size);
+
+	return (write(1, "%%", 1));
+}
